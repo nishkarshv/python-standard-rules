@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "pystdrules"
+version = "0.1.0"
+description = "A package to automate environment setup and checks"
+authors = ["Nishkarsh V <nishkarshv@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+
+[tool.poetry.dev-dependencies]
+black = "^23.3"  # Ensures compatibility with Python >= 3.9
+mypy = "^0.971"
+ruff = "^0.0.200"
+bandit = "^1.8.0"
+pydocstyle = "^6.3.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3"  # Ensures compatibility with Python >= 3.9
+mypy = "^0.971"
+ruff = "^0.0.200"
+bandit = "^1.8.0"
+pydocstyle = "^6.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
